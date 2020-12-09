@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+
+body {
+    background-color: rgb(53,53,53);;
+}
+
+header {
+    width: 100%;
+    color: rgb(0,128,220);
+    background-color: rgb(40,40,40);
+    float: left;
+}
+
+
+h1, h3 {
+	text-align: center;
+    color: rgb(0,128,220);
+}
+
+aside{
+	text-align: center;
+}
+
+
+form{
+	margin-left: 30%;
+	width: 35%;
+	border-radius: 10%;
+}
+
+.form{
+	background-color: rgb(40,40,40);
+	border: solid rgb(0,128,220);
+}
+
+label{
+	margin-left: 15%;
+}
+
+input, .form label, .form select{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+input[type=button], input[type=submit]{
+	margin-left: 30%
+}
+
+.tel{
+	margin-left: 10%
+}
+
+.form label{
+	clear: both;
+	padding-right: 10px;
+	color: rgb(0,128,220);
+}
+
+.control{
+	display: block;
+}
+
+.table{
+	margin-left: 15%;
+	width: 70%;
+	background-color: rgb(40,40,40);
+	border: solid rgb(0,128,220);
+	border-radius: 0px;
+}
+
+td{
+	color: rgb(223,238,255);
+}
+
+.titulo{
+	color: rgb(0,128,220) !important;
+}
+
+.btng{
+	width: 150px;
+	height: 30px;
+}
+
+.espacio{
+	padding-top: 200px;
+}

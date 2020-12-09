@@ -47,25 +47,12 @@ public class CrearDatos extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String url = null;
 		
-		
-		Operadora o1 = new Operadora(0, "Movistar");
-		Operadora o2 = new Operadora(0, "Claro");
-		Operadora o3 = new Operadora(0, "CNT");
-		Operadora o4 = new Operadora(0, "Etapa");
-		opedao.create(o1);
-		opedao.create(o2);
-		opedao.create(o3);
-		opedao.create(o4);
-		
-		/*
-		OperadoraDAO opedao = DAOFactory.getFactory().getOperadoraDAO();
-		System.out.println("llega");
-		TipoTelefonoDAO tipodao = DAOFactory.getFactory().getTipoTelefonoDAO();
 
 		List<Operadora> operadoras = opedao.find();
 		List<TipoTelefono> tipos = tipodao.find();
-
-		if(operadoras!=null) {
+		
+		
+		if(operadoras.size()==0) {
 			Operadora o1 = new Operadora(0, "Movistar");
 			Operadora o2 = new Operadora(0, "Claro");
 			Operadora o3 = new Operadora(0, "CNT");
@@ -79,7 +66,7 @@ public class CrearDatos extends HttpServlet {
 			System.out.println("Ya existen operadoras");
 		}
 		
-		if(tipos!=null) {
+		if(tipos.size()==0) {
 			TipoTelefono t1 = new TipoTelefono(0, "Celular");
 			TipoTelefono t2 = new TipoTelefono(0, "Convencional");
 			tipodao.create(t1);
@@ -87,7 +74,7 @@ public class CrearDatos extends HttpServlet {
 			System.out.println("Se crearon los tipos de telefono");
 		}else {
 			System.out.println("Ya existen tipos de telefonos");
-		}*/
+		}
 		
 		
 		url = "/HTMLs/index.html";
